@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-star',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarComponent implements OnInit {
 
-  rating: number = 2.3;
+  @Input() rating: number = 2.3;
   width: number = 90;
   constructor() { }
 
